@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .details {
+    @apply flex;
+  }
+}
+
+@layer components {
+  .menu__iteams {
+    @apply mr-2 md:mx-6;
+  }
+}
+@layer components {
+  .details__iteams {
+    @apply flex flex-col  md:flex-row  w-full;
+  }
+}
+@layer components {
+  .details__devider {
+    @apply basis-2/4;
+  }
+}
+@layer components {
+  .details__img {
+    @apply m-auto w-8/12;
+  }
+}
+@layer components {
+  .dh {
+    @apply text-5xl my-4 text-body-text;
+  }
+}
+@layer components {
+  .dp {
+    @apply text-xl text-body-text;
+  }
+}
