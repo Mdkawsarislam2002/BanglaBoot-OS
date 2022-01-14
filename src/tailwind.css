@@ -38,3 +38,14 @@
     @apply text-xl text-body-text;
   }
 }
+@layer components {
+  .fotter_container {
+    @apply text-xl  ml-5 text-zinc-600;
+  }
+}
+
+@layer components {
+  .fh {
+    @apply text-3xl my-5 capitalize text-gray-600;
+  }
+}
