@@ -474,6 +474,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .menu__iteams {
   margin-right: 0.5rem;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.menu__iteams:hover {
+  --tw-text-opacity: 1;
+  color: rgb(86 165 247 / var(--tw-text-opacity));
 }
 
 @media (min-width: 768px) {
@@ -501,23 +509,43 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .details__img {
   margin: auto;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
   width: 66.666667%;
 }
 
 .dh {
   margin-top: 1rem;
   margin-bottom: 1rem;
-  font-size: 3rem;
-  line-height: 1;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
   --tw-text-opacity: 1;
   color: rgb(33 37 41 / var(--tw-text-opacity));
 }
 
+@media (min-width: 1024px) {
+  .dh {
+    margin-left: 8rem;
+    margin-right: 8rem;
+  }
+}
+
 .dp {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+  margin-top: 1rem;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+  margin-bottom: 3.5rem;
   --tw-text-opacity: 1;
   color: rgb(33 37 41 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1024px) {
+  .dp {
+    margin-left: 8rem;
+    margin-right: 8rem;
+  }
 }
 
 .fotter_container {
@@ -545,6 +573,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .top-0 {
   top: 0px;
+}
+
+.order-1 {
+  order: 1;
+}
+
+.order-2 {
+  order: 2;
 }
 
 .my-5 {
@@ -604,18 +640,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: space-around;
 }
 
-.justify-evenly {
-  justify-content: space-evenly;
-}
-
-.gap-10 {
-  gap: 2.5rem;
-}
-
-.gap-5 {
-  gap: 1.25rem;
-}
-
 .self-center {
   align-self: center;
 }
@@ -640,11 +664,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border-blue-1100 {
   --tw-border-opacity: 1;
   border-color: rgb(86 165 247 / var(--tw-border-opacity));
-}
-
-.border-red-600 {
-  --tw-border-opacity: 1;
-  border-color: rgb(220 38 38 / var(--tw-border-opacity));
 }
 
 .bg-white {
@@ -768,6 +787,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(86 165 247 / var(--tw-text-opacity));
 }
 
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .transition-all {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -788,7 +812,25 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+@media (min-width: 640px) {
+  .sm\:order-1 {
+    order: 1;
+  }
+
+  .sm\:order-2 {
+    order: 2;
+  }
+}
+
 @media (min-width: 768px) {
+  .md\:order-1 {
+    order: 1;
+  }
+
+  .md\:order-2 {
+    order: 2;
+  }
+
   .md\:mx-10 {
     margin-left: 2.5rem;
     margin-right: 2.5rem;
@@ -796,13 +838,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 1024px) {
-  .lg\:flex {
-    display: flex;
+  .lg\:order-2 {
+    order: 2;
   }
-}
 
-@media (min-width: 1280px) {
-  .xl\:flex {
+  .lg\:order-1 {
+    order: 1;
+  }
+
+  .lg\:flex {
     display: flex;
   }
 }

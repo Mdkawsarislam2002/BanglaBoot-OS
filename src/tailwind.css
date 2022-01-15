@@ -10,7 +10,7 @@
 
 @layer components {
   .menu__iteams {
-    @apply mr-2 md:mx-6;
+    @apply mr-2 md:mx-6 transition-all hover:text-blue-1100;
   }
 }
 @layer components {
@@ -25,17 +25,17 @@
 }
 @layer components {
   .details__img {
-    @apply m-auto w-8/12;
+    @apply m-auto w-8/12 my-5;
   }
 }
 @layer components {
   .dh {
-    @apply text-5xl my-4 text-body-text;
+    @apply text-3xl my-4 text-body-text lg:mx-32 mx-10;
   }
 }
 @layer components {
   .dp {
-    @apply text-xl text-body-text;
+    @apply text-body-text my-4 lg:mx-32 mx-10 mb-14;
   }
 }
 @layer components {
